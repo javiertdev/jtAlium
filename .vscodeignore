@@ -1,0 +1,13 @@
+.vscode
+test
+src
+!src/**/*.css
+!src/**/*.js
+out
+pnpm-lock.yaml
+.gitignore
+.vscode-test.mjs
+esbuild.js
+eslint.config.mjs
+tsconfig.json
+README.es.md

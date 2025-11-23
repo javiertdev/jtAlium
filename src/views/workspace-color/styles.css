@@ -1,0 +1,83 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.theme-square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: transform 0.1s ease;
+}
+
+.theme-square:hover {
+    transform: scale(1.05);
+}
+
+.remove-theme {
+    background-color: #ffffff;
+    color: #d32f2f;
+    font-size: 2rem;
+}
+
+.custom-color {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid var(--vscode-focusBorder);
+    border-radius: 8px;
+    padding: .5rem;
+}
+
+.custom-color .input-colors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+
+.custom-color .input-colors .input-group{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.custom-color label {
+    font-weight: bold;
+    font-size: .8rem;
+    width: 100%;
+    padding-bottom: .25rem;
+}
+
+.custom-color input[type="color"] {
+    width: 100%;
+    height: 40px;
+    background-color: var(--vscode-input-background);
+    border: 1px solid var(--vscode-input-border);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-color button {
+    padding: .5rem 1rem;
+    background-color: var(--vscode-button-background);
+    color: var(--vscode-button-foreground);
+    border: 1px solid var(--vscode-button-border);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.custom-color button:hover {
+    background-color: var(--vscode-button-hoverBackground);
+}

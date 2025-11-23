@@ -1,0 +1,316 @@
+.packages-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem 0;
+}
+
+.package-card {
+    border: 1px solid var(--vscode-list-inactiveSelectionBackground);
+    border-radius: 8px;
+    padding: .5rem;
+    background-color: var(--vscode-editor-background);
+}
+
+.package-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.package-path {
+    font-size: 0.8rem;
+    color: var(--vscode-descriptionForeground);
+    font-family: var(--vscode-font-family);
+    cursor: pointer;
+}
+
+.package-path:hover {
+    text-decoration: underline;
+    color: var(--vscode-foreground);
+}
+
+.package-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--vscode-foreground);
+}
+
+.scripts-section {
+    margin-top: .5rem;
+}
+
+.scripts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.scripts-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--vscode-foreground);
+}
+
+.add-script-btn {
+    background-color: var(--vscode-button-background);
+    color: var(--vscode-button-foreground);
+    border: 1px solid var(--vscode-button-border);
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.add-script-btn:hover {
+    background-color: var(--vscode-button-hoverBackground);
+}
+
+.scripts-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.script-item {
+    border: 1px solid var(--vscode-list-inactiveSelectionBackground);
+    border-radius: 4px;
+    padding: .5rem;
+    background-color: var(--vscode-editor-background);
+}
+
+.script-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .25rem;
+}
+
+.script-name {
+    font-weight: bold;
+    color: var(--vscode-foreground);
+    font-size: 0.9rem;
+}
+
+.script-actions {
+    display: flex;
+    gap: .25rem;
+}
+
+.script-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.2rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.run-btn {
+    background-color: var(--vscode-charts-green);
+    color: white;
+}
+
+.run-btn:hover {
+    background-color: var(--vscode-charts-green);
+    opacity: 0.8;
+}
+
+.edit-btn {
+    background-color: var(--vscode-charts-blue);
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: var(--vscode-charts-blue);
+    opacity: 0.8;
+}
+
+.delete-btn {
+    background-color: var(--vscode-charts-red);
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: var(--vscode-charts-red);
+    opacity: 0.8;
+}
+
+.script-command {
+    font-family: var(--vscode-editor-font-family);
+    font-size: 0.85rem;
+    color: var(--vscode-descriptionForeground);
+    background-color: var(--vscode-input-background);
+    padding: 0.25rem;
+    border-radius: 3px;
+    border: 1px solid var(--vscode-input-border);
+    word-break: break-all;
+}
+
+.script-edit-input {
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid var(--vscode-input-border);
+    border-radius: 3px;
+    background-color: var(--vscode-input-background);
+    color: var(--vscode-input-foreground);
+    font-family: var(--vscode-editor-font-family);
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.save-edit-btn,
+.cancel-edit-btn,
+.save-add-btn,
+.cancel-add-btn {
+    background-color: var(--vscode-button-background);
+    color: var(--vscode-button-foreground);
+    border: 1px solid var(--vscode-button-border);
+    border-radius: 3px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-right: 0.25rem;
+}
+
+.save-edit-btn:hover,
+.save-add-btn:hover {
+    background-color: var(--vscode-button-hoverBackground);
+}
+
+.cancel-edit-btn,
+.cancel-add-btn {
+    background-color: var(--vscode-button-secondaryBackground);
+    color: var(--vscode-button-secondaryForeground);
+}
+
+.cancel-edit-btn:hover,
+.cancel-add-btn:hover {
+    background-color: var(--vscode-button-secondaryHoverBackground);
+}
+
+.add-script-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--vscode-list-inactiveSelectionBackground);
+    border-radius: 4px;
+    background-color: var(--vscode-editor-background);
+}
+
+.script-name-input,
+.script-command-input {
+    padding: 0.25rem;
+    border: 1px solid var(--vscode-input-border);
+    border-radius: 3px;
+    background-color: var(--vscode-input-background);
+    color: var(--vscode-input-foreground);
+    font-family: var(--vscode-editor-font-family);
+    font-size: 0.85rem;
+}
+
+.script-name-input:focus,
+.script-command-input:focus,
+.script-edit-input:focus {
+    outline: 1px solid var(--vscode-focusBorder);
+}
+
+.no-scripts {
+    text-align: center;
+    color: var(--vscode-descriptionForeground);
+    font-style: italic;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.loading, .empty-message {
+    text-align: center;
+    color: var(--vscode-descriptionForeground);
+    font-style: italic;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+.empty-message {
+    color: var(--vscode-descriptionForeground);
+}
+
+/* Delete confirmation modal */
+.delete-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.delete-modal {
+    background-color: var(--vscode-editor-background);
+    border: 1px solid var(--vscode-list-inactiveSelectionBackground);
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.delete-modal h3 {
+    margin: 0 0 1rem 0;
+    color: var(--vscode-foreground);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.delete-modal p {
+    margin: 0 0 1.5rem 0;
+    color: var(--vscode-descriptionForeground);
+    line-height: 1.4;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+}
+
+.cancel-delete-btn,
+.confirm-delete-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--vscode-button-border);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.cancel-delete-btn {
+    background-color: var(--vscode-button-secondaryBackground);
+    color: var(--vscode-button-secondaryForeground);
+}
+
+.cancel-delete-btn:hover {
+    background-color: var(--vscode-button-secondaryHoverBackground);
+}
+
+.confirm-delete-btn {
+    background-color: var(--vscode-charts-red);
+    color: white;
+}
+
+.confirm-delete-btn:hover {
+    background-color: var(--vscode-charts-red);
+    opacity: 0.8;
+}

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 540 807.562" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+  <g style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:20;stroke-dasharray:none;stroke-opacity:1">
+    <g style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:20;stroke-dasharray:none;stroke-opacity:1">
+      <path style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:currentColor;stroke-width:20;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M309.375 630h240.75v145.125l-62.437 62.438H369l-60.469-60.47z" transform="translate(-160 -40)"/>
+      <path style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:currentColor;stroke-width:10;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M308.25 676.125h241.875" transform="translate(-160 -40)"/>
+      <path style="opacity:1;fill:none;fill-opacity:1;stroke:currentColor;stroke-width:10;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M308.25 726.75H549m-239.625 48.375H549" transform="translate(-160 -40)"/>
+    </g>
+    <g style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:20;stroke-dasharray:none;stroke-opacity:1">
+      <path style="opacity:1;fill:none;fill-opacity:1;stroke:currentColor;stroke-width:20;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="m309.305 630 .695-80-140-270 90-180 170-50 170 50 90 180-140 270-.086 80z" transform="translate(-160 -40)"/>
+      <path style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M260 100h340M312 548l-52-448m288 448 52-448" transform="translate(-160 -40)"/>
+      <path style="display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M388.202 630V470h82.731v160" transform="translate(-160 -40)"/>
+    </g>
+    <path style="fill:currentColor;stroke-width:14.9653;stroke-linejoin:round" d="M347.549 375.35q-15.654 0-31.078-2.303v-26.243q16.345 2.993 28.315 2.993 18.187 0 18.187-16.345V223.644h35.911v108.657q0 23.48-12.66 33.38-12.662 9.668-38.675 9.668zm117.634-126.153h-46.04v-25.553h127.763v25.553h-45.81v123.85h-35.913z" transform="matrix(1.0027 0 0 .9973 -160 -40)" aria-label="JT"/>
+  </g>
+</svg>

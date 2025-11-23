@@ -1,0 +1,156 @@
+{
+  "name": "jt-alium",
+  "displayName": "jtAlium",
+  "description": "An extension that will light the way for your developments!",
+  "version": "1.0.0",
+  "icon": "resources/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javiertdev/jtAlium.git"
+  },
+  "publisher": "javiertdev",
+  "author": {
+    "name": "javiert.dev",
+    "email": "vscode@javiert.dev",
+    "url": "https://javiert.dev"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "VSCode",
+    "Extension",
+    "Developer Tools",
+    "Workspace",
+    "Color",
+    "Customization",
+    "File",
+    "Folder",
+    "Hide",
+    "Package Manager",
+    "Version Control",
+    "Scripts Manager",
+    "NPM Scripts",
+    "Package.json",
+    "Monorepo",
+    "Angular",
+    "React",
+    "Node.js",
+    "Fun"
+  ],
+  "galleryBanner": {
+    "color": "#ffa200",
+    "theme": "dark"
+  },
+  "activationEvents": [
+    "onView:jt-alium.panel"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jt-alium.openWorkspaceColor",
+        "title": "jtAlium: Open Workspace Color"
+      },
+      {
+        "command": "jt-alium.openHideResources",
+        "title": "jtAlium: Open Hide Resources"
+      },
+      {
+        "command": "jt-alium.openPackageVersionUpdater",
+        "title": "jtAlium: Open Package Version Updater"
+      },
+      {
+        "command": "jt-alium.openPackageScriptsManager",
+        "title": "jtAlium: Open Package Scripts Manager"
+      },
+      {
+        "command": "jt-alium.hideFile",
+        "title": "jtAlium: Hide this"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "jt-alium-container",
+          "title": "jtAlium",
+          "icon": "resources/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "jt-alium-container": [
+        {
+          "id": "jt-alium.workspace-color",
+          "name": "Workspace Color",
+          "type": "webview",
+          "icon": "resources/icon.svg"
+        },
+        {
+          "id": "jt-alium.hide-resources",
+          "name": "Hide resources",
+          "type": "webview",
+          "icon": "resources/icon.svg"
+        },
+        {
+          "id": "jt-alium.package-version-updater",
+          "name": "Package Version Updater",
+          "type": "webview",
+          "icon": "resources/icon.svg",
+          "contextualTitle": "Package Version Updater"
+        },
+        {
+          "id": "jt-alium.package-scripts-manager",
+          "name": "Package Scripts Manager",
+          "type": "webview",
+          "icon": "resources/icon.svg",
+          "contextualTitle": "Package Scripts Manager"
+        }
+      ]
+    },
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "jt-alium.hideFile",
+          "when": "resourceExtname != '' || explorerResourceIsFolder",
+          "group": "7_modification"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "build": "npx vsce package",
+    "vscode:prepublish": "pnpm run package",
+    "compile": "pnpm run check-types && pnpm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "pnpm run check-types && pnpm run lint && node esbuild.js --production",
+    "clear": "rm -rf dist out *.vsix",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src test",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.105.0",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "@vscode/vsce": "^3.6.2",
+    "esbuild": "^0.25.10",
+    "eslint": "^9.36.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.9.3"
+  }
+}
